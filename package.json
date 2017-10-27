@@ -1,0 +1,18 @@
+{
+  "name": "conway",
+  "version": "1.0.0",
+  "description": "Conway's Game of Life",
+  "main": "index.js",
+  "author": "J.D. Broberg",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack && sh ./build.sh"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
