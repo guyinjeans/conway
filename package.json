@@ -6,7 +6,7 @@
   "author": "J.D. Broberg",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
+    "start": "yarn build && node index.js",
     "build": "webpack && sh ./build.sh"
   },
   "dependencies": {
