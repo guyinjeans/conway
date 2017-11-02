@@ -1,18 +1,23 @@
 {
-  "name": "conway",
+  "name": "Conway",
   "version": "1.0.0",
-  "description": "Conway's Game of Life",
+  "description": "Game of Life",
   "main": "index.js",
-  "author": "J.D. Broberg",
+  "repository": "https://github.com/guyinjeans/Conway",
+  "author": "guyinjeans <jdbroberg72@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn build && node index.js",
+    "start": "nodemon --ignore './dist' -e js --exec 'yarn watch'",
+    "watch": "yarn build && node index.js",
     "build": "webpack && sh ./build.sh"
   },
   "dependencies": {
     "express": "^4.16.2"
   },
   "devDependencies": {
+    "uglify-js": "3",
+    "uglifyjs-webpack-plugin": "^1.0.1",
     "webpack": "^3.8.1"
-  }
+  },
+  "pre-push": []
 }
